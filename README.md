@@ -1,4 +1,4 @@
-# Laboratory work №6 from NRNU MEPhi
+# Laboratory work №6 from NRNU MEPhI
 Laboratory work №6 from NRNU MEPhI 1-st semester done with priority queue.
 
 The task was to delete words that contain one of the first N non-space symbols from the string.
