@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 
 #define TAKE_ERROR "Ошибка доступа к памяти при доставании элемента из очереди.\nЗавершение работы программы..." 
 
