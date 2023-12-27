@@ -23,6 +23,7 @@ int main() {
     set_ascii_to_zero(&ascii);
     while (symbol != EOF) {
         N = get_N();
+        if (N == 128) return 0;
         string = get_list(&ascii, &symbol);
         if (string == NULL) {
             print_list(string);
@@ -156,12 +157,13 @@ size_t get_N() {
     printf("\nВведите N: ");
     int scanned = scanf("%zu", &N);
     if (scanned == EOF) {
-        exit(EXIT_SUCCESS);
+        return 128;
     }
     while (scanned != 1 || N > 94) {
         fprintf(stderr, "%s",  errors[2]);
         getchar();
         scanned = scanf("%zu", &N);
+        if (scanned == EOF) return 128;
     }
     getchar();
     return N;
