@@ -52,16 +52,16 @@ void heapify(Queue *q, int root) {
     Node *root_node = *(q->body + root);
     Node *left_node;
     Node *right_node;
-    if (left < q->size) left_node = *(q->body + left);
-    if (right < q->size) right_node = *(q->body + right);
 
     if (left < q->size) {
+        left_node = *(q->body + left);
         if (left_node->priority > root_node->priority) {
             largest = left;
         }
     }
 
     if (right < q->size) {
+        right_node = *(q->body + right);
         if (right_node->priority > root_node->priority) {
             largest = right;
         }
