@@ -22,6 +22,5 @@ int del_item(Queue *q, size_t index);
 void swap(Node **elem1, Node **elem2);
 void heapify(Queue *q, int root);
 int insert(Queue *q, Node *n);
-void free_queue(Queue *q);
 
 #endif

@@ -73,13 +73,6 @@ void heapify(Queue *q, int root) {
     }
 }
 
-void free_queue(Queue *q) {
-    for (size_t i = 0; i < q->size; i++) {
-        free(*(q->body + i));
-    }
-    free(q->body);
-}
-
 int insert(Queue *q, Node *n) {
     q->size += 1;
     Node **tmp = realloc(q->body, q->size * sizeof(Node *));
